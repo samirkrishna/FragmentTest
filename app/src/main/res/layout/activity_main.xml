@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="load"
+                android:text="Home" />
+
+            <Button
+                android:id="@+id/courses"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="load"
+                android:text="courses" />
+
+            <Button
+                android:id="@+id/material"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="load"
+                android:text="Material" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="load"
+                android:text="Home" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="load"
+                android:text="Home" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="load"
+                android:text="Home" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="load"
+                android:text="Home" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:id="@+id/frag1"
+        android:name="com.example.chsamirkrishna.fragmenttest.Home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"></FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy right-2018"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
